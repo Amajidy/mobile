@@ -1,0 +1,30 @@
+.iziToast {
+  padding: 8px 40px 8px 0 !important;
+  min-width: 300px;
+  max-height: 60px;
+  text-align: right;
+}
+
+.iziToast-body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iziToast-wrapper {
+  //z-index: 999999999 !important;
+
+  .iziToast-texts {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+
+    .iziToast-message {
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+  }
+
+  //.iziToast-color-green {
+  //  background: #25af48 !important;
+  //}
+}

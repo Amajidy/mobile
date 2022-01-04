@@ -1,0 +1,29 @@
+.v-pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+// global
+.v-text-gold {
+  color: #C99C2C;
+}
+
+.v-text-purple {
+  color: $ColorText;
+}
+
+.v-text-bold {
+ font-family: 'yekanBakh-fat';
+}
+
+.v-text-success {
+  color: #21BF73;
+}
+
+.v-text-danger {
+  color: #D90429;
+}

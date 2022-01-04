@@ -1,0 +1,118 @@
+$InputHeight: 40px;
+
+.input-modern {
+  position: relative;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+  width: 100%;
+
+
+  &.valid-status {
+    .input-modern__parent {
+      border: 1px solid #19b400;
+
+      .error {
+        color: #19b400;
+        opacity: 1;
+
+        &:before {
+          //content: url("~global/success-input.svg");
+        }
+      }
+    }
+  }
+
+  &.invalid-status {
+    .input-modern__parent {
+      border: 1px solid #ab1414;
+
+      .error {
+        color: #ab1414;
+        opacity: 1;
+
+        &:before {
+          //content: url("~global/error-input.svg");
+        }
+      }
+    }
+  }
+
+  .input-modern__parent {
+    background: rgba(58, 49, 161, 0.5);
+    border-radius: 12px;
+    border: 1px solid $ColorText;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: $InputHeight;
+  }
+
+  .input-modern__img {
+    background: linear-gradient(360deg, #321C81 0%, #3A31A1 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    margin-right: -1px;
+    height: $InputHeight;
+  }
+
+  .input-modern__input {
+    background: unset;
+    border: none;
+    height: 40px;
+    width: 100%;
+    outline: 0;
+    font-size: 14px;
+    padding: 0 10px;
+    //color: #ffffff;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input {
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
+    }
+  }
+
+  .input-modern__label {
+    white-space: nowrap;
+    margin: 0 0 .2rem 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: $ColorText;
+  }
+
+  .error {
+    position: absolute;
+    bottom: -1.1rem;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    transition: 0.3s;
+    line-height: 13px;
+    right: 0.7rem;
+    opacity: 0;
+
+    &:before {
+      width: 13px;
+      height: 13px;
+      margin: 0 3px;
+    }
+  }
+}
